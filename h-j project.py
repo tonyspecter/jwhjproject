@@ -21,6 +21,7 @@ contribution=int(sum/tot_head)
 public_money_deviation=public_money_dict.copy()
 for i in public_money_dict:
     public_money_deviation[i]-=contribution
+print(public_money_deviation)
 
 
 
