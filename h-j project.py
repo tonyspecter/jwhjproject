@@ -1,7 +1,6 @@
 tot_head=int(input('몇명인가요?  '))
 
 print('명단을 파악하겠습니다')
-p_dic={}
 name_list = []
 for i in range(tot_head):
     name=input('이름: ')
@@ -15,13 +14,14 @@ for i in public_money_dict:
     paid_money=int(input('%s :' % i))
     sum+=paid_money
     public_money_dict[i]=paid_money
-
+print(public_money_dict)
 #공급지불액 편차 계산
 contribution=int(sum/tot_head)
 public_money_deviation=public_money_dict.copy()
 for i in public_money_dict:
     public_money_deviation[i]-=contribution
 print(public_money_deviation)
+#지원아 안녕
 
 
 
